@@ -1,0 +1,122 @@
+body { 
+    margin: 0;
+}
+
+div[id="image-container"] {
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+div[id="old-testament-container"], [id="new-testament-container"] {
+    float: left;
+    margin-top: 20px;
+    width: 20%
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+
+    * {
+        font-size: large;
+        vertical-align: middle;
+    }
+
+    button {
+        background-color: #e9e9ed;
+        border: 2px solid black;
+        height: 50px;
+        width: 100px;
+    }
+    
+    button[id="decrement-image"] {
+        background: url("https://0x53616D75656C.github.io/Great-Uncial-Codices/assets/arrow-left-solid.svg") #e9e9ed center no-repeat;
+        margin-left: 10px;
+        width: 50px;
+    }
+
+    button[id="download-images"] {
+        margin-left: 10px;
+    }
+    
+    button[id="increment-image"] {
+        background: url("https://0x53616D75656C.github.io/Great-Uncial-Codices/assets/arrow-right-solid.svg") #e9e9ed center no-repeat;
+        width: 50px;
+    }
+    
+    button[id="open-dialog"] {
+        margin-left: 10px;
+    }
+
+    button:hover {
+        background-color: #1a73e8;
+        cursor: pointer;
+    }
+    
+    dialog[id="contact-dialog"] {
+        border: none;
+
+        button[id="cancel"] {
+            margin-right: 10px;
+        }
+
+        button[id="cancel"], button[id="confirm"] {
+            width: 240px;
+        }
+        
+        input[id="subject"], textarea[id="body"] {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 100%;
+        }
+    
+        textarea[id="body"] {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            resize: none;
+        }
+    }
+
+    select[id="codices"] {
+        background-color: #e9e9ed;
+        border: 2px solid black;
+        height: 50px;
+        margin-left: 10px;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+html {
+    background-color: lightgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+
+    &:hover {
+        cursor: pointer;
+        list-style-type: disc;
+    }
+}

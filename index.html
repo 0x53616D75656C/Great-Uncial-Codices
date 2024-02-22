@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Great Uncial Codices</title>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <script defer src="scripts/script.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>Great Uncial Codices</h1>
+            <select name="codices" id="codices">
+                <option selected>Vaticanus</option>
+                <option>Sinaiticus</option>
+                <option>Alexandrinus</option>
+                <option>Ephraemi</option>
+                <option>Bezae</option>
+            </select>
+            <button type="button" id="decrement-image"></button>
+            <span id="image-number"></span>
+            <button type="button" id="increment-image"></button>
+            <button type="button" id="download-images">Download</button>
+            <button type="button" id="open-dialog">Contact</button>
+            <dialog id="contact-dialog">
+                <input id="subject" placeholder="Subject"></input>
+                <div>
+                    <textarea id="body" rows="10" placeholder="Providing contact information is optional."></textarea>
+                </div>
+                <div>
+                    <button type="button" id="cancel">Cancel</button>
+                    <button type="button" id="confirm">Confirm</button>
+                </div>
+            </dialog>
+        </form>
+        <div id="old-testament-container">
+            <h2>Old Testament</h2>
+            <ul id="old-testament-books"></ul>
+        </div>
+        <div id="image-container"></div>
+        <div id="new-testament-container">
+            <h2>New Testament</h2>
+            <ul id="new-testament-books"></ul>
+        </div>
+    </body>
+</html>
